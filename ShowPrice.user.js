@@ -4,8 +4,8 @@
 // @author          navchandar
 // @version         0.1
 // @run-at          document-end
-// @copyright       2019, navchandar(https://openuserjs.org/users/navchandar)
-// @updateURL       https://openuserjs.org/
+// @copyright       2019, navchandar(https://github.com/navchandar)
+// @updateURL       https://openuserjs.org/meta/navchandar/Show_Price_as_Hours_of_your_Life.meta.js/
 // @icon            https://www.seaicons.com/wp-content/uploads/2015/09/Money-Graph-icon.png
 // @license         MIT
 // @grant           GM_addStyle
