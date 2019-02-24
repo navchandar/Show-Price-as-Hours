@@ -2,7 +2,7 @@
 // @name            Show Price as Hours of your Life
 // @description     Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
 // @author          navchandar
-// @version         0.1
+// @version         0.2
 // @run-at          document-end
 // @copyright       2019, navchandar(https://github.com/navchandar)
 // @updateURL       https://openuserjs.org/meta/navchandar/Show_Price_as_Hours_of_your_Life.meta.js/
@@ -12,6 +12,10 @@
 // @grant           GM_getValue
 // @grant           GM_setValue
 // @include         https://play.google.com/store/*
+// @include         https://play.google.com/store*
+// @include         http://play.google.com/store*
+// @include         http://www.amazon.com/*
+// @include         https://www.amazon.com/*
 // @include         http://www.amazon.in/*
 // @include         https://www.amazon.in/*
 // @include         https://www.flipkart.com*
@@ -37,6 +41,14 @@ function updateValuesINR(){
             "//*[contains(@class, 'price')]//*[contains(text(), '₹')]" + " | " +
             "//h2/span[contains(text(), '₹')]";
 
+        var amazonUSDxpath = "//*[@class='dealPrice']" + " | " +
+            "//*[@class='buyingPrice']" + " | " +
+            "//*[contains(@class,'-price-whole')]" + " | " +
+            "(//span[@class='dv-conditional-linebreak']//following-sibling::text())[1]" + " | " +
+            "(//span[@class='dv-conditional-linebreak']//following-sibling::text())[2]" + " | " +
+            "//span[contains(@class, 'price')][contains(text(), '$')]" + " | " +
+            "//a[@id='dealTitle']" + " | " + "//div[contains(@class, 'priceBlock')]" ;
+
         var flipkartINRxpath = "//*[contains(@title, '₹')]/div[3]" + " | " +
             "//div[contains(text(), '₹')]";
 
@@ -49,8 +61,12 @@ function updateValuesINR(){
             "//button[contains(text(), '₹')]//text()";
 
         var hostURL = window.location.href;
-        if (hostURL.indexOf('amazon') >= 0){
+        if (hostURL.indexOf('amazon.in') >= 0){
             items = document.evaluate(amazonINRxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+            separator = "&nbsp;"; }
+
+        else if (hostURL.indexOf('amazon.com') >= 0){
+            items = document.evaluate(amazonUSDxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
             separator = "&nbsp;"; }
 
         else if (hostURL.indexOf('flipkart') >= 0){
@@ -80,37 +96,41 @@ function updateValuesINR(){
             for (let i = 0; i < items.snapshotLength; i++) {
                 var thisitem = items.snapshotItem(i);
                 var txt = thisitem.innerText;
+                var alreadyUpdated = false;
+                try { if (txt.indexOf('hrs') >= 0) { alreadyUpdated = true; } } catch (err) {}
+                try { if (thisitem.innerHTML.indexOf('hrs') >= 0) { alreadyUpdated = true; } } catch (err) {}
 
-                if(!(txt.indexOf('hrs') >= 0) && !(thisitem.innerHTML.indexOf('hrs') >=0)){
-                    // to remove +10% offers from flipkart
-                    if(txt.indexOf('+') >= 0){
-                        txt = txt.split('+')[0];
-                    }
-
-                    // to remove hidden text from paytm
-                    if(txt.indexOf('%') >= 0 && txt.indexOf('-') >= 0){
-                        txt = txt.split('-')[0]
-                    }
-
-                    // to remove 100-200 range from amazon
-                    if(txt.indexOf('-') >= 0){
-                        txt = txt.split('-')[1];
-                    }
-
-                    // remove unneccessary text and convert to number.
-                    var amount = Number(txt.replace(",","").replace("Rs.","").replace("₹", "").replace(".00", "").replace(" ", ""));
-                    if(!amount || amount <= 0){
-                        amount = Number(txt.replace(/\D+/g,""));
-                    }
-                    if(amount > 0) {
-                        var calculated = (amount/approxHourlySalary).toFixed(2);
-                        if(calculated){
-                            thisitem.innerHTML += (separator + "<b>(" + calculated + " hrs)</b>");
-                            passCount++;
-                        } else {
-                            console.log("Error calculating amount : " + amount);
+                if(!alreadyUpdated){
+                    try{
+                        // to remove +10% offers from flipkart
+                        if(txt.indexOf('+') >= 0){
+                            txt = txt.split('+')[0];
                         }
-                    }
+
+                        // to remove hidden text from paytm
+                        if(txt.indexOf('%') >= 0 && txt.indexOf('-') >= 0){
+                            txt = txt.split('-')[0]
+                        }
+
+                        // to remove 100-200 range from amazon
+                        if(txt.indexOf('-') >= 0){ txt = txt.split('-')[1]; }
+                        if(txt.indexOf('to') >= 0){ txt = txt.split('to')[1]; }
+
+                        // remove unneccessary text and convert to number.
+                        var amount = Number(txt.replace(",","").replace("Rs.","").replace("₹", "").replace("$", "").replace(".00", "").replace(" ", ""));
+                        if(!amount || amount <= 0){
+                            amount = Number(txt.replace(/\D+/g,""));
+                        }
+                        if(amount > 0) {
+                            var calculated = (amount/approxHourlySalary).toFixed(2);
+                            if(calculated){
+                                thisitem.innerHTML += (separator + "<b>(" + calculated + " hrs)</b>");
+                                passCount++;
+                            } else {
+                                console.log("Error calculating amount : " + amount);
+                            }
+                        }
+                   } catch (err) {}
                 }
             }
             console.log("Updated hours to " + passCount +" items.");
