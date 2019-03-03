@@ -1,5 +1,5 @@
 # Show Price as Hours of your Life
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/navchandar/Show-Price-as-Hours/blob/master/LICENSE) <a href="https://codeclimate.com/github/navchandar/Show-Price-as-Hours/maintainability"><img src="https://api.codeclimate.com/v1/badges/055008dacafcf28a984e/maintainability" /></a>
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/navchandar/Show-Price-as-Hours/blob/master/LICENSE) [![Maintainability](https://api.codeclimate.com/v1/badges/055008dacafcf28a984e/maintainability)](https://codeclimate.com/github/navchandar/Show-Price-as-Hours/maintainability)
 [![HitCount](http://hits.dwyl.io/navchandar/Show-Price-as-Hours.svg)](http://hits.dwyl.io/navchandar/Show-Price-as-Hours)
  [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/navchandar)
 
