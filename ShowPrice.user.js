@@ -2,7 +2,7 @@
 // @name            Show Price as Hours of your Life
 // @description     Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
 // @author          navchandar
-// @version         0.2
+// @version         0.3
 // @run-at          document-end
 // @copyright       2019, navchandar(https://github.com/navchandar)
 // @updateURL       https://openuserjs.org/meta/navchandar/Show_Price_as_Hours_of_your_Life.meta.js/
@@ -116,11 +116,17 @@ function updateValuesINR(){
                         if(txt.indexOf('-') >= 0){ txt = txt.split('-')[1]; }
                         if(txt.indexOf('to') >= 0){ txt = txt.split('to')[1]; }
 
+                        txt = (txt.replace(/\d+ Used/i, "").replace(/\d+ New/i, "")).replace(/\(\d+%\)/g, "");
+                        txt = txt.replace(/[a-z]/gi, "");
+
                         // remove unneccessary text and convert to number.
                         var amount = Number(txt.replace(",","").replace("Rs.","").replace("₹", "").replace("$", "").replace(".00", "").replace(" ", ""));
                         if(!amount || amount <= 0){
-                            amount = Number(txt.replace(/\D+/g,""));
+                            amount = Number((txt.replace(".00", "").replace(/\.\d+/, "")).replace(/\D+/g,""));
                         }
+
+                        //console.log(amount, txt);
+
                         if(amount > 0) {
                             var calculated = (amount/approxHourlySalary).toFixed(2);
                             if(calculated){
