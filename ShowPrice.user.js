@@ -2,7 +2,7 @@
 // @name            Show Price as Hours of your Life
 // @description     Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
 // @author          navchandar
-// @version         0.3
+// @version         0.4
 // @run-at          document-end
 // @copyright       2019, navchandar(https://github.com/navchandar)
 // @updateURL       https://openuserjs.org/meta/navchandar/Show_Price_as_Hours_of_your_Life.meta.js/
@@ -47,6 +47,7 @@ function updateValuesINR(){
             "(//span[@class='dv-conditional-linebreak']//following-sibling::text())[1]" + " | " +
             "(//span[@class='dv-conditional-linebreak']//following-sibling::text())[2]" + " | " +
             "//span[contains(@class, 'price')][contains(text(), '$')]" + " | " +
+            "//h2[contains(@class, 'headline') and contains(text(), '₹')]" + " | " +
             "//a[@id='dealTitle']" + " | " + "//div[contains(@class, 'priceBlock')]" ;
 
         var flipkartINRxpath = "//*[contains(@title, '₹')]/div[3]" + " | " +
