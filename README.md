@@ -17,8 +17,9 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 
 
 ## Installation
-* Install [Tampermonkey](https://tampermonkey.net/) browser extension on Chrome/Firefox.
-* Get `Show-Price-as-Hours` [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js)
+* Install [Tampermonkey](https://tampermonkey.net/) extension for your browser of choice 💻.
+* Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js) 📃.
+* Enjoy NOT spending. 👍
 
 
 
