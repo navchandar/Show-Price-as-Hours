@@ -2,7 +2,7 @@
 // @name            Show Price as Hours of your Life
 // @description     Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
 // @author          navchandar
-// @version         0.4
+// @version         0.5
 // @run-at          document-end
 // @copyright       2019, navchandar(https://github.com/navchandar)
 // @updateURL       https://openuserjs.org/meta/navchandar/Show_Price_as_Hours_of_your_Life.meta.js/
@@ -39,6 +39,7 @@ function updateValuesINR(){
             "//span[@class='currencyINR']/parent::*" + " | " +
             "//*[contains(@class, 'rice')][contains(text(), '₹')]" + " | " +
             "//*[contains(@class, 'price')]//*[contains(text(), '₹')]" + " | " +
+            "//*[contains(@class, 'price-whole')]" + " | " +
             "//h2/span[contains(text(), '₹')]";
 
         var amazonUSDxpath = "//*[@class='dealPrice']" + " | " +
