@@ -2,7 +2,8 @@
 // @name            Show Price as Hours of your Life
 // @description     Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
 // @author          navchandar
-// @version         1.0
+// @version         1.2
+// @icon            data:image/png;base64,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
 // @run-at          document-end
 // @copyright       2019, navchandar(https://github.com/navchandar)
 // @downloadURL     https://openuserjs.org/install/navchandar/Show_Price_as_Hours_of_your_Life.user.js
@@ -25,6 +26,16 @@
 // @include         https://paytmmall.com*
 // @include         http://paytmmall.com*
 // ==/UserScript==
+
+function has(String, search) {
+  try {
+    if (String.indexOf(search) > -1) {
+      return true;
+    }
+  }
+  catch (err) {}
+  return false;
+}
 
 function updateValuesINR() {
   var approxHourlySalary = Number(GM_getValue("approxAnnualSalary", "")) / (9 * 22 * 12);
@@ -60,35 +71,36 @@ function updateValuesINR() {
 
     var playStoreINRxpath = "//*[@class='display-price' and contains(text(), '₹')]" + " | " +
       "//button[@jsmodel]//span[contains(text(), '₹')]" + " | " +
-      "//button[contains(text(), '₹')]//text()";
+      "//button[contains(text(), '₹')]//text()" + " | " +
+      "//meta[@itemprop='price']";
 
     var hostURL = window.location.href;
-    if (hostURL.indexOf('amazon.in') >= 0) {
+    if (has(hostURL, 'amazon.in')) {
       items = document.evaluate(amazonINRxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       separator = "&nbsp;";
     }
 
-    else if (hostURL.indexOf('amazon.com') >= 0) {
+    else if (has(hostURL, 'amazon.com')) {
       items = document.evaluate(amazonUSDxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       separator = "&nbsp;";
     }
 
-    else if (hostURL.indexOf('flipkart') >= 0) {
+    else if (has(hostURL, 'flipkart')) {
       items = document.evaluate(flipkartINRxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       separator = "&nbsp;";
     }
 
-    else if (hostURL.indexOf('paytm') >= 0) {
+    else if (has(hostURL, 'paytm')) {
       items = document.evaluate(paytmINRxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       separator = "<br/>";
     }
 
-    else if ((hostURL.indexOf('google') >= 0) && (hostURL.indexOf('details') >= 0)) {
+    else if ((has(hostURL, 'google')) && (has(hostURL, 'details'))) {
       items = document.evaluate(playStoreINRxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       separator = "&nbsp;";
     }
 
-    else if ((hostURL.indexOf('google') >= 0) && (hostURL.indexOf('store') >= 0)) {
+    else if ((has(hostURL, 'google')) && (has(hostURL, 'store'))) {
       items = document.evaluate(playStoreINRxpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       separator = "<br/>";
     }
@@ -108,15 +120,20 @@ function updateValuesINR() {
       for (let i = 0; i < items.snapshotLength; i++) {
         var thisitem = items.snapshotItem(i);
         var txt = thisitem.innerText;
+        var htm = thisitem.innerHTML;
+        if (txt == null | txt == "" | htm == null | htm == "") {
+          txt = thisitem.textContent;
+        }
+
         var alreadyUpdated = false;
         try {
-          if (txt.indexOf('hrs') >= 0  | txt.indexOf('days') >= 0 | txt.indexOf('month') >= 0) {
+          if (has(txt, 'hrs') | has(txt, 'days') | has(txt, 'month') | has(txt, 'YEARS')) {
             alreadyUpdated = true;
           }
         }
         catch (err) {}
         try {
-          if (thisitem.innerHTML.indexOf('hrs') >= 0 | thisitem.innerHTML.indexOf('days') >= 0 | thisitem.innerHTML.indexOf('month') >= 0) {
+          if (has(htm, 'hrs') | has(htm, 'days') | has(htm, 'month') | has(htm, 'YEARS')) {
             alreadyUpdated = true;
           }
         }
@@ -125,21 +142,24 @@ function updateValuesINR() {
         if (!alreadyUpdated) {
           try {
             // to remove +10% offers from flipkart
-            if (txt.indexOf('+') >= 0) {
+            if (has(txt, '+')) {
               txt = txt.split('+')[0];
             }
 
             // to remove hidden text from paytm
-            if (txt.indexOf('%') >= 0 && txt.indexOf('-') >= 0) {
+            if (has(txt, '%') && has(txt, '-')) {
               txt = txt.split('-')[0]
             }
 
             // to remove 100-200 range from amazon
-            if (txt.indexOf('-') >= 0) {
+            if (has(txt, '-')) {
               txt = txt.split('-')[1];
             }
-            if (txt.indexOf('to') >= 0) {
+            if (has(txt, 'to')) {
               txt = txt.split('to')[1];
+            }
+            if (has(txt, 'Buy')) {
+              txt = txt.split('Buy')[0];
             }
 
             txt = (txt.replace(/\d+ Used/i, "").replace(/\d+ New/i, "")).replace(/\(\d+%\)/g, "");
@@ -150,19 +170,27 @@ function updateValuesINR() {
             if (!amount || amount <= 0) {
               amount = Number((txt.replace(".00", "").replace(/\.\d+/, "")).replace(/\D+/g, ""));
             }
-
-            //console.log(amount, txt);
+            var appender = "";
 
             if (amount > 0) {
-              var calculated = (amount / approxHourlySalary).toFixed(2);
+              var calculated = (amount / approxHourlySalary).toFixed(3);
               if (calculated) {
-                  if (calculated < 10){
-                      thisitem.innerHTML += (separator + "<b>(" + calculated + " hrs)</b>");
-                  }else if (calculated < 190){
-                      thisitem.innerHTML += (separator + "<b>(" + (calculated/9).toFixed(2) + " days)</b>");
-                  }else{
-                      thisitem.innerHTML += (separator + "<b>(" + (calculated/198).toFixed(2) + " months)</b>");
-                  }
+                if (calculated < 10) {
+                  appender = (separator + "<b>(" + (calculated).toFixed(1) + " hrs)</b>");
+                  thisitem.innerHTML += appender;
+                }
+                else if (calculated < 190) {
+                  appender = (separator + "<b>(" + (calculated / 9).toFixed(1) + " days)</b>");
+                  thisitem.innerHTML += appender;
+                }
+                else if (calculated < 2380) {
+                  appender = (separator + "<b>(" + (calculated / 198).toFixed(1) + " months)</b>");
+                  thisitem.innerHTML += appender;
+                }
+                else {
+                  appender = (separator + "<b>(" + (calculated / 2376).toFixed(1) + " YEARS)</b>");
+                  thisitem.innerHTML += appender;
+                }
                 passCount++;
               }
               else {
@@ -206,25 +234,8 @@ function AddButton() {
 
   //--- Style our newly added element using CSS.
   GM_addStyle(`
-#myContainer {
-position:               fixed;
-bottom:                 0;
-left:                   0;
-font-size:              11px;
-margin:                 0px;
-opacity:                0.75;
-}
-#myButton {
-cursor:                 pointer;
-background-color:       lightgrey;
-color:                  black;
-}
-#myButton:hover {
-background-color:       #555;
-color:                  white;
-box-shadow:             0 2px 6px 0 rgba(0,0,0,.24), 0 5px 10px 0 rgba(0,0,0,.19);
-opacity:                1;
-}
+#myContainer{position:fixed;bottom:0;left:0;font-size:11px;margin:0;opacity:.75}#myButton{cursor:pointer;background-color:lightgrey;color:black}
+#myButton:hover{background-color:#555;color:white;box-shadow:0 2px 6px 0 rgba(0,0,0,.24),0 5px 10px 0 rgba(0,0,0,.19);opacity:1}
 `);
 
 }
@@ -246,9 +257,6 @@ opacity:                1;
       GM_setValue("UserCancelledPrompt", true);
       console.log("User Cancelled prompt to update approxAnnualSalary.");
     }
-  }
-  else {
-    console.log("Retrieved approxAnnualSalary : " + approxAnnualSalary);
   }
 
   // call this function once
