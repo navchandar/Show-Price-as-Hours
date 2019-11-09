@@ -1,7 +1,7 @@
 # Show Price as Hours of your Life
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/navchandar/Show-Price-as-Hours/blob/master/LICENSE) [![Maintainability](https://api.codeclimate.com/v1/badges/055008dacafcf28a984e/maintainability)](https://codeclimate.com/github/navchandar/Show-Price-as-Hours/maintainability)
 [![HitCount](http://hits.dwyl.io/navchandar/Show-Price-as-Hours.svg)](http://hits.dwyl.io/navchandar/Show-Price-as-Hours)
-![Follow](https://img.shields.io/twitter/follow/navchandar?label=Follow&style=flat-square)
+[![Twitter Follow navchandar][1.1]][1]
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T617N9I)
 
@@ -37,3 +37,7 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 ![Flipkart](https://raw.githubusercontent.com/navchandar/Show-Price-as-Hours/master/fk.png)
 ### PayTm
 ![PayTm](https://raw.githubusercontent.com/navchandar/Show-Price-as-Hours/master/pt.png)
+
+[1.1]: http://i.imgur.com/wWzX9uB.png 
+[1]: http://www.twitter.com/navchandar
+
