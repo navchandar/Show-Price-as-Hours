@@ -1,7 +1,7 @@
 # Show Price as Hours of your Life
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/navchandar/Show-Price-as-Hours/blob/master/LICENSE) [![Maintainability](https://api.codeclimate.com/v1/badges/055008dacafcf28a984e/maintainability)](https://codeclimate.com/github/navchandar/Show-Price-as-Hours/maintainability)
 [![HitCount](http://hits.dwyl.io/navchandar/Show-Price-as-Hours.svg)](http://hits.dwyl.io/navchandar/Show-Price-as-Hours)
- [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/navchandar)
+![Follow](https://img.shields.io/twitter/follow/navchandar?label=Follow&style=flat-square)
 
 Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
 
@@ -17,11 +17,16 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 
 
 ## Installation
-* Install [Tampermonkey](https://tampermonkey.net/) extension for your browser of choice 💻.
-* Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js) 📃.
+* Install [Tampermonkey](https://tampermonkey.net/) extension for your browser of choice.
+* Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js).
 * Enjoy NOT spending. 👍
 
 
+## Browsers support
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Opera |
+| --------- | --------- | --------- | --------- | --------- |
+| Edge| last 10 versions| last 10 versions| last 2 versions| last 5 versions
 
 ## Sample Results
 ### Amazon
