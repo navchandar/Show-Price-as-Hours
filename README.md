@@ -19,7 +19,9 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 
 
 ## Installation
-* Install [Tampermonkey](https://tampermonkey.net/) extension for your browser of choice.
+
+* If you are new to userscripts/Greasemonkey/Tampermonkey, Checkout this [getting started guide](https://github.com/OpenUserJs/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO).
+* Install [Tampermonkey](https://tampermonkey.net/)/[Violentmonkey](https://violentmonkey.github.io/) extension for your device.
 * Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js).
 * Enjoy NOT spending. 👍
 
