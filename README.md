@@ -13,15 +13,16 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 - For now, this script works on Amazon.com, Amazon.in, Flipkart.com, Paytm, Google Store and Google Shopping. 
 - A small Reset button also will be added by this Userscript to help you update future increase/decrease in earnings.
 - If you shop online, this script will display the hourly value near by the actual price of an item (hopefully to encourage you to spend informed).
+- If you are new to userscripts/Greasemonkey/Tampermonkey, Checkout this [getting started guide](https://github.com/OpenUserJs/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO).
 
 
 
 ## Installation
-
-* If you are new to userscripts/Greasemonkey/Tampermonkey, Checkout this [getting started guide](https://github.com/OpenUserJs/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO).
-* Install [Tampermonkey](https://tampermonkey.net/)/[Violentmonkey](https://violentmonkey.github.io/) extension for your device.
-* Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js).
-* Spend cautiously online! 👍
+- Install your favorite [browser](https://en.wikipedia.org/wiki/Comparison_of_web_browsers).
+- Install browser extensions [Greasemonkey](https://www.greasespot.net/) / [TamperMonkey](https://www.tampermonkey.net/) / [ViolentMonkey](https://violentmonkey.github.io/) on your browser.
+- Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js).
+- [Feedback](https://github.com/navchandar/Show-Price-as-Hours/issues) welcome. Let me know any new ideas/ improvements to scripts.
+- Spend cautiously online! 👍
 
 
 ## Browsers support
