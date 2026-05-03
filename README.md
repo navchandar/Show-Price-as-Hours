@@ -18,6 +18,7 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
   - [Amazon.com](https://www.amazon.com)
   - [Flipkart.com](https://www.flipkart.com)
   - [Myntra](https://www.myntra.com)
+  - [Steam](https://store.steampowered.com/)
   - [Google Play Store](https://play.google.com)
   - [Google Store](https://store.google.com)
   - [Google Shopping](https://shopping.google.co.in)
