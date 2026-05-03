@@ -1,25 +1,33 @@
 # Show Price as Hours of your Life
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/navchandar/Show-Price-as-Hours/blob/master/LICENSE) [![Maintainability](https://api.codeclimate.com/v1/badges/055008dacafcf28a984e/maintainability)](https://codeclimate.com/github/navchandar/Show-Price-as-Hours/maintainability)
-[![Twitter Follow navchandar][1.1]][1]
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/navchandar/Show-Price-as-Hours/blob/master/LICENSE) 
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/)
 
-
-Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money.
+Gets the price displayed on shopping sites and shows the equivalent hours of your life you'd need to work to earn that money.
+> _"That item isn't ₹9,999 — it is **10.5 Days** of your life."_
 
 
 ## Usage
 - This script asks a user for their Approximate Annual Salary/Wages/Earning. This value is only stored in your browser's local TamperMonkey/GreaseMonkey DB.
 - Based on Annual Earnings and the Price of an item, the average hours required for you to work to buy each item is calculated and displayed.
-- For now, this script works on Amazon.com, Amazon.in, Flipkart.com, Paytm, Google Store and Google Shopping. 
 - A small Reset button also will be added by this Userscript to help you update future increase/decrease in earnings.
 - If you shop online, this script will display the hourly value near by the actual price of an item (hopefully to encourage you to spend informed).
+- Oversized EMI/instalment prices (e.g. "₹999/month") are automatically shrunk to smaller size so they don't mislead you.
 - If you are new to userscripts/Greasemonkey/Tampermonkey, Checkout this [getting started guide](https://github.com/OpenUserJs/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO).
-
-
+- Supported Websites:
+  - [Amazon.in](https://www.amazon.in)
+  - [Amazon.com](https://www.amazon.com)
+  - [Flipkart.com](https://www.flipkart.com)
+  - [Myntra](https://www.myntra.com)
+  - [Google Play Store](https://play.google.com)
+  - [Google Store](https://store.google.com)
+  - [Google Shopping](https://shopping.google.co.in)
+  - > Want to add a new site? Fork and send us a PR!
 
 ## Installation
 - Install your favorite [browser](https://en.wikipedia.org/wiki/Comparison_of_web_browsers).
 - Install browser extensions [Greasemonkey](https://www.greasespot.net/) / [TamperMonkey](https://www.tampermonkey.net/) / [ViolentMonkey](https://violentmonkey.github.io/) on your browser.
 - Install this [userscript](https://github.com/navchandar/Show-Price-as-Hours/raw/master/ShowPrice.user.js).
+- Visit any supported shopping site — you'll be prompted once for your approximate annual salary.
 - [Feedback](https://github.com/navchandar/Show-Price-as-Hours/issues) welcome. Let me know any new ideas/ improvements to scripts.
 - Spend cautiously online! 👍
 
@@ -29,6 +37,14 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br> Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Opera |
 | --------- | --------- | --------- | --------- | --------- |
 | last 2 versions | last 10 versions| last 10 versions| last 2 versions| last 5 versions
+
+### Privacy
+
+Your data is stored locally in your browser's Tampermonkey/Greasemonkey storage.
+
+No data is sent to any server. The script runs entirely client-side.
+
+No analytics, no tracking, no cookies.
 
 ## Donate
 
@@ -42,9 +58,4 @@ Gets the price displayed on shopping sites and shows the equivalent hours of you
 ![Amazon](https://raw.githubusercontent.com/navchandar/Show-Price-as-Hours/master/az.png)
 ### Flipkart
 ![Flipkart](https://raw.githubusercontent.com/navchandar/Show-Price-as-Hours/master/fk.png)
-### PayTm
-![PayTm](https://raw.githubusercontent.com/navchandar/Show-Price-as-Hours/master/pt.png)
-
-[1.1]: http://i.imgur.com/wWzX9uB.png 
-[1]: http://www.twitter.com/navchandar
 
