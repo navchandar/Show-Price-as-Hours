@@ -2,7 +2,7 @@
 // @name            Show Price as Hours of your Life
 // @description     Gets the price displayed on shopping sites and shows the equivalent hours of your life spent to earn that money. Also alters dark patterns!
 // @author          navchandar
-// @version         3.0
+// @version         3.1
 // @license         MIT
 // @run-at          document-end
 // @homepage        https://navchandar.github.io/
