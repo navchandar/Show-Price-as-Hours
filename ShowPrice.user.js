@@ -32,6 +32,7 @@
 // @match           *://*.flipkart.com/*
 // @match           *://*.paytm.com/*
 // @match           *://*.myntra.com/*
+// @match           *://*.steampowered.com/*
 // @match           *://play.google.com/*
 // @match           *://*.google.com/store/*
 // @match           *://*.google.co.in/shopping/*
@@ -44,6 +45,7 @@
 // @downloadURL     https://update.greasyfork.org/scripts/383103/Show%20Price%20as%20Hours%20of%20your%20Life.user.js
 // @updateURL       https://update.greasyfork.org/scripts/383103/Show%20Price%20as%20Hours%20of%20your%20Life.meta.js
 // ==/UserScript==
+
 
 
 (function () {
@@ -151,6 +153,21 @@
                     xpath: "//*[contains(text(), 'EMI')]//ancestor::*[contains(@class, 'grid')]",
                     styles: { fontSize: "10px", color: "white", background: "lightgrey" },
                 }
+            ]
+        },
+        {
+            name: "Steam",
+            test: (url) => url.includes("steampowered"),
+            currency: "₹",
+            separator: "&nbsp;",
+            xpath: [
+                "//div[contains(@class, 'final_price')]",
+            ].join(" | "),
+            darkPatterns: [
+                {
+                    xpath: "//div[contains(@class, 'discount_pct') or contains(text(), 'discount_percent')]",
+                    styles: { fontSize: "10px" },
+                },
             ]
         },
         {
@@ -688,3 +705,4 @@
         error("Fatal error during initialisation:", err);
     }
 })();
+
